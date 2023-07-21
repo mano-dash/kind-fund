@@ -1,0 +1,187 @@
+// @import "./variable.scss";
+@mixin javatext {
+  font-family: 'javatext';
+}
+@mixin sofia {
+    font-family: 'Sofia', cursive;
+}
+@mixin ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin anker{
+  cursor: pointer;
+  text-decoration: none;
+}
+@mixin flex{
+  display:flex;
+}
+@mixin justify-center{
+  justify-content: center;
+}
+@mixin justify-space-between{
+  justify-content: space-between;
+}
+@mixin justifySpaceBetween{
+  justify-content: space-between;
+}
+@mixin justify-end{
+  justify-content: flex-end;
+}
+@mixin justify-start{
+  justify-content: flex-start;
+}
+@mixin align-center{
+  align-items: center;
+}
+@mixin text-center{
+  text-align: center;
+}
+@mixin position-absolute{
+  position: absolute;
+}
+@mixin position-fixed{
+  position: fixed;
+}
+@mixin full-width{
+  width:100%!important;
+}
+
+@mixin primary-button{
+  background: $defaultBlue;
+  color: $defaultcolor;
+}
+@mixin primary-buttonHover{
+  background: $blackcolor;
+
+}
+@mixin secondary-button{
+  color: $defaultbuttonblue;
+  border: 1px solid $defaultbuttonblue;
+
+}
+@mixin secondary-buttonHover{
+  background: $defaultbuttonblue;
+  color: $defaultcolor;
+
+}
+
+
+@mixin deepBlue-button{
+  color: $defaultBlue;
+  border: 2px solid $defaultBlue;
+
+}
+@mixin deepBlue-buttonHover{
+  background: $defaultBlue;
+  color: $defaultcolor;
+
+}
+
+
+@mixin yellow-button{
+  color: $defaultcolor;
+  background: $yellow;
+
+}
+@mixin yellow-buttonHover{
+  background: #dc8a16;
+  color: $defaultcolor;
+
+}
+
+@mixin blue-button{
+  color: $defaultcolor;
+  background: $buttonbluecolor;
+
+}
+@mixin blue-buttonHover{
+  background: #116fc9;
+  color: $defaultcolor;
+
+}
+
+@mixin box-shadow{
+box-shadow: 0 0 5px #ccc;
+}
+@mixin box-shadowHover{
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 25%);
+}
+
+@mixin transition{
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+@mixin img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+@mixin heading{
+  font-size: 42px;
+  color: $defaultheadingcolor;
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 52px;
+  @media (max-width:1200px) {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  @media (max-width:767px) {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
+
+@mixin midheading{
+  font-size: 30px;
+  color: #00254c;
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 52px;
+@media (max-width:767px) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+
+@mixin content{
+  font-size: 14px;
+  color: $descriptionText;
+  line-height: 23px;
+}
+@mixin shortheading{
+  color:$defaultheadingbluecolor;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  padding-left:17px;
+  &:before{
+    width:10px;
+    height: 10px;
+    border-radius: 100%;
+    background: $defaultheadingbluecolor;
+    position: absolute;
+    left:0;
+    content: "";
+    top:4px;
+  }
+}
+@mixin input{
+  outline:none;
+}
+
+@mixin borderRadius{
+  border-radius: 5px;
+}
+
+
+@mixin homeSecHdn{
+  font-family: 'javatext';
+  font-size: 50px;
+  color: #1a500e;
+  text-align: center;
+}

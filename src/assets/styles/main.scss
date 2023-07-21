@@ -1,0 +1,116 @@
+@import "./fonts";
+@import "./variable";
+@import "./mixin";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: $defaultcolor;
+  font-weight: 500;
+}
+p, h2, h1, h3, h4, h5{
+  padding: 0;
+  margin: 0;
+}
+.img {
+  @include img;
+}
+.mlauto {
+  margin-left: auto !important;
+}
+.mrauto {
+  margin-right: auto !important;
+}
+.margin10 {
+  margin-top: 10px;
+}
+.margin20 {
+  margin-top: 20px !important;
+}
+.margin30 {
+  margin-top: 30px !important;
+}
+.margin40 {
+  margin-top: 40px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.margin50 {
+  margin-top: 50px !important;
+}
+.marginLeft10 {
+  margin-left: 10px;
+}
+.mtm30 {
+  margin-top: -30px !important;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) {
+    max-width: 540px;
+    width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+    width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+    width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+    width: 1140px;
+  }
+}
+
+input,
+textarea,
+select {
+  font-family: 'Inter', sans-serif;
+}
+
+.containerfluid {
+  max-width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ul {
+  @include ul;
+}
+.cdark {
+  color: $blackcolor !important;
+}
+.cwhite {
+  color: $defaultcolor !important;
+}
+.btn {
+  border: none;
+  outline: none;
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.btn:disabled {
+  pointer-events: none;
+  background: #fff;
+  color: #000;
+  border: solid 1px $grey;
+}
